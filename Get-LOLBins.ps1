@@ -38,3 +38,22 @@ foreach ($lol in $loljson)
         }
     }
 }
+
+
+### another ###
+# $Category = Read-Host "Enter Category:" 
+# $loljson = $loljson = Get-Content -Path "lolbas.json" | ConvertFrom-Json
+# $binlist= @()
+
+# foreach ($lol in $loljson)
+# {
+#     foreach ($lolcategory in $lol.Commands.Category)
+#     {
+#         if ($lolcategory -eq $Category)
+#         {
+# 		    $binlist+= $lol.Name
+# 	    }
+#     }      
+# }
+# $uniqbin = $binlist | Select-Object -Unique | Sort-Object
+# Get-ChildItem -Path C:\ -Force -Recurse -Include $uniqbin -ea 0 | select -exp FullName
